@@ -1,16 +1,11 @@
 import './App.css';
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
-import ChatPage from './components/ChatPage';
-import JoinCreateRoom from './components/JoinCreateRoom';
+import React, { useState } from 'react';
+import JoinCreateChat from './components/JoinCreateChat';
 function App() {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<JoinCreateRoom/>}/>
-        <Route path="/chat" element={<ChatPage/>}/>
-      </Routes>
-    </BrowserRouter>
+    <JoinCreateChat/>
     </>
   );
 }
